@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
         applicationId "com.google.android.gms.example.bannerexample"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion rootProject.minSDKVersion
+        targetSdkVersion rootProject.targetSDKVersion
         versionCode 1
         versionName "1.0"
     }
