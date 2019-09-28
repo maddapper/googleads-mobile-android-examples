@@ -7,10 +7,11 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsVersion
+
     defaultConfig {
         applicationId "com.google.android.gms.example.bannerexample"
-        minSdkVersion rootProject.minSDKVersion
-        targetSdkVersion rootProject.targetSDKVersion
+        minSdkVersion minSDKVersion
+        targetSdkVersion targetSDKVersion
         versionCode 1
         versionName "1.0"
     }
@@ -27,6 +28,7 @@ android {
 }
 
 dependencies {
+    implementation project(':PrebidMobile-core')
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'com.google.android.gms:play-services-ads:18.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

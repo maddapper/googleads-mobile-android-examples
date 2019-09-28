@@ -16,14 +16,22 @@
 package com.google.android.gms.example.bannerexample
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest
+import com.google.android.gms.ads.doubleclick.PublisherAdView
 import kotlinx.android.synthetic.main.activity_my.*
+import org.prebid.mobile.*
 
 /**
  * Main Activity. Inflates main activity xml and child fragments.
  */
 class MyActivity : AppCompatActivity() {
+    internal var adUnit: AdUnit? = null
+    lateinit var resultCode: ResultCode
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

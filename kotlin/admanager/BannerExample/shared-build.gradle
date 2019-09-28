@@ -5,10 +5,10 @@ android {
     buildToolsVersion rootProject.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion rootProject.minSDKVersion
-        targetSdkVersion rootProject.targetSDKVersion
-        versionCode rootProject.prebidVersionCode
-        versionName rootProject.prebidVersionName
+        minSdkVersion minSDKVersion
+        targetSdkVersion targetSDKVersion
+        versionCode prebidVersionCode
+        versionName prebidVersionName
 
 //        consumerProguardFiles project(':PrebidMobile').file('proguard-rules.pro')
     }
